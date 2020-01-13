@@ -1,0 +1,10 @@
+#include <iostream>
+#includ <conio.h>
+
+using namespace std;
+
+int main() {
+int num,i;
+cin >> num;
+cout << "Input number is " << num << endl;
+	}// Writing output to STDOUT
