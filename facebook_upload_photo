@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+     int  n,l,w,h,i;
+    cin >>l>>n;
+    for (i=1;i<=n;i++)
+    { cin>>w>>h;
+        (w<l||h<l)?(cout<<"UPLOAD ANOTHER\n"):((w==h)?(cout<<"ACCEPTED\n"):(cout<<"CROP IT\n"));
+    }
+    return 0;
+}
