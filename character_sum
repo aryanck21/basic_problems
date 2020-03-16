@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char a[100];
+	int i,c,sum=0;
+	cin>>a;
+	for (i=0;i<=a[i];i++)
+	{
+		c=(a[i])-96;
+		sum=c+sum;
+	}
+	cout<<sum;
+	return 0;
+}
