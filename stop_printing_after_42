@@ -12,6 +12,6 @@ int main ()
 		goto last;
 	}
 	last:
-	cout<<"\0";
+	cout<<"\0";			//no need of null statement
 	return 0;	
 }	
