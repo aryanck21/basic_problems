@@ -1,0 +1,318 @@
+#include <iostream>
+
+using namespace std;
+
+struct clss
+{
+    char name[20];
+    int math;
+    int english;
+    int hindi;
+    int social;
+    int science;
+    int computer;
+    int total;
+};
+int main()
+{
+    int i;
+    int math_count0=0,math_count1=0,math_count2=0,math_count3=0,math_count4=0,math_count5=0,math_count6=0,math_count7=0,math_count8=0,math_count9=0;
+    int eng_count0=0,eng_count1=0,eng_count2=0,eng_count3=0,eng_count4=0,eng_count5=0,eng_count6=0,eng_count7=0,eng_count8=0,eng_count9=0;
+    int hindi_count0=0,hindi_count1=0,hindi_count2=0,hindi_count3=0,hindi_count4=0,hindi_count5=0,hindi_count6=0,hindi_count7=0,hindi_count8=0,hindi_count9=0;
+    int sst_count0=0,sst_count1=0,sst_count2=0,sst_count3=0,sst_count4=0,sst_count5=0,sst_count6=0,sst_count7=0,sst_count8=0,sst_count9=0;
+    int sci_count0=0,sci_count1=0,sci_count2=0,sci_count3=0,sci_count4=0,sci_count5=0,sci_count6=0,sci_count7=0,sci_count8=0,sci_count9=0;
+    int comp_count0=0,comp_count1=0,comp_count2=0,comp_count3=0,comp_count4=0,comp_count5=0,comp_count6=0,comp_count7=0,comp_count8=0,comp_count9=0;
+
+    clss student[20];
+    
+                        /*LOOP TO ENTER DATA BEIGINS*/
+                        
+                        
+    cout<<"ENTER ROLL NO.,NAME AND MARKS OF EACH STUDENT RESPECTIVELY\n";
+    for (i=0;i<1;i++)
+    {
+        cout<<"\nENTER NAME OF ROLL NO."<<i+1;
+        cin>>student[i].name;
+                        /*TO ENETR MARKS IN MATHS AND TO COUNT ITS FREQUENCY*/
+        cout<<"ENTER STUDENTS MARKS IN MATHS:";
+        cin>>student[i].math;
+        {
+            if(student[i].math>=0&&student[i].math<11)
+            math_count0++;
+            else if(student[i].math>10&&student[i].math<21)
+            math_count1++;
+            else if(student[i].math>20&&student[i].math<31)
+            math_count2++;
+            else if(student[i].math>30&&student[i].math<41)
+            math_count3++;
+            else if(student[i].math>40&&student[i].math<51)
+            math_count4++;
+            else if(student[i].math>50&&student[i].math<61)
+            math_count5++;
+            else if(student[i].math>60&&student[i].math<71)
+            math_count6++;
+            else if(student[i].math>70&&student[i].math<81)
+            math_count7++;
+            else if(student[i].math>80&&student[i].math<91)
+            math_count8++;
+            else if(student[i].math>90&&student[i].math<101)
+            math_count9++;
+            else NULL;
+        }
+        
+                        /*TO ENTER MARKS IN ENGLISH AND TO COUNT ITS FREQUENCY*/
+        cout<<"ENTER STUDENT's MARKS IN ENGLISH:";
+        cin>>student[i].english;
+        {
+            if(student[i].english>=0&&student[i].english<11)
+            eng_count0++;
+            else if(student[i].english>10&&student[i].english<21)
+            eng_count1++;
+            else if(student[i].english>20&&student[i].english<31)
+            eng_count2++;
+            else if(student[i].english>30&&student[i].english<41)
+            eng_count3++;
+            else if(student[i].english>40&&student[i].english<51)
+            eng_count4++;
+            else if(student[i].english>50&&student[i].english<61)
+            eng_count5++;
+            else if(student[i].english>60&&student[i].english<71)
+            eng_count6++;
+            else if(student[i].english>70&&student[i].english<81)
+            eng_count7++;
+            else if(student[i].english>80&&student[i].english<91)
+            eng_count8++;
+            else if(student[i].english>90&&student[i].english<101)
+            eng_count9++;
+            else NULL;
+        }
+        
+                        /*TO ENTER MARKS IN HINDI AND TO COUNT ITS FREQUENCY*/
+        cout<<"ENTER STUDENT's MARKS IN HINDI:";
+        cin>>student[i].hindi;
+        {
+            if(student[i].hindi>=0&&student[i].hindi<11)
+            hindi_count0++;
+            else if(student[i].hindi>10&&student[i].hindi<21)
+            hindi_count1++;
+            else if(student[i].hindi>20&&student[i].hindi<31)
+            hindi_count2++;
+            else if(student[i].hindi>30&&student[i].hindi<41)
+            hindi_count3++;
+            else if(student[i].hindi>40&&student[i].hindi<51)
+            hindi_count4++;
+            else if(student[i].hindi>50&&student[i].hindi<61)
+            hindi_count5++;
+            else if(student[i].hindi>60&&student[i].hindi<71)
+            hindi_count6++;
+            else if(student[i].hindi>70&&student[i].hindi<81)
+            hindi_count7++;
+            else if(student[i].hindi>80&&student[i].hindi<91)
+            hindi_count8++;
+            else if(student[i].hindi>90&&student[i].hindi<101)
+            hindi_count9++;
+            else NULL;
+        }
+        
+                        /*TO ENTER MARKS IN SOCIAL AND TO COUNT ITS FREQUENCY*/
+        cout<<"ENTER STUDENT's MARKS IN SOCIAL STUDIES:";
+        cin>>student[i].social;
+        {
+            if(student[i].social>=0&&student[i].social<11)
+            sst_count0++;
+            else if(student[i].social>10&&student[i].social<21)
+            sst_count1++;
+            else if(student[i].social>20&&student[i].social<31)
+            sst_count2++;
+            else if(student[i].social>30&&student[i].social<41)
+            sst_count3++;
+            else if(student[i].social>40&&student[i].social<51)
+            sst_count4++;
+            else if(student[i].social>50&&student[i].social<61)
+            sst_count5++;
+            else if(student[i].social>60&&student[i].social<71)
+            sst_count6++;
+            else if(student[i].social>70&&student[i].social<81)
+            sst_count7++;
+            else if(student[i].social>80&&student[i].social<91)
+            sst_count8++;
+            else if(student[i].social>90&&student[i].social<101)
+            sst_count9++;
+            else NULL;
+        }
+                        /*TO ENTER MARKS IN SCIENCE AND TO COUNT ITS FREQUENCY*/
+        cout<<"ENTER STUDENT's MARKS IN SCIENCE:";
+        cin>>student[i].science;
+        {
+            if(student[i].science>=0&&student[i].science<11)
+            sci_count0++;
+            else if(student[i].science>10&&student[i].science<21)
+            sci_count1++;
+            else if(student[i].science>20&&student[i].science<31)
+            sci_count2++;
+            else if(student[i].science>30&&student[i].science<41)
+            sci_count3++;
+            else if(student[i].science>40&&student[i].science<51)
+            sci_count4++;
+            else if(student[i].science>50&&student[i].science<61)
+            sci_count5++;
+            else if(student[i].science>60&&student[i].science<71)
+            sci_count6++;
+            else if(student[i].science>70&&student[i].science<81)
+            sci_count7++;
+            else if(student[i].science>80&&student[i].science<91)
+            sci_count8++;
+            else if(student[i].science>90&&student[i].science<101)
+            sci_count9++;
+            else NULL;
+        }
+        
+                        /*TO ENTER MARKS IN COPUTER AND TO COUNT ITS FREQUENCY*/
+        cout<<"ENTER STUDENT's MARKS IN COMPUTER:";
+        cin>>student[i].computer;
+        {
+            if(student[i].computer>=0&&student[i].computer<11)
+            comp_count0++;
+            else if(student[i].computer>10&&student[i].computer<21)
+            comp_count1++;
+            else if(student[i].computer>20&&student[i].computer<31)
+            comp_count2++;
+            else if(student[i].computer>30&&student[i].computer<41)
+            comp_count3++;
+            else if(student[i].computer>40&&student[i].computer<51)
+            comp_count4++;
+            else if(student[i].computer>50&&student[i].computer<61)
+            comp_count5++;
+            else if(student[i].computer>60&&student[i].computer<71)
+            comp_count6++;
+            else if(student[i].computer>70&&student[i].computer<81)
+            comp_count7++;
+            else if(student[i].computer>80&&student[i].computer<91)
+            comp_count8++;
+            else if(student[i].computer>90&&student[i].computer<101)
+            comp_count9++;
+            else NULL;
+        }
+        
+                        /*TO FIND THE TOTAL MARKS OF STUDENT*/ 
+        student[i].total=student[i].math+student[i].english+student[i].hindi+student[i].social+student[i].science+student[i].computer;
+    }
+                        
+                        /*LOOP TO PRINT SDUDENTS MARKS BEIGINS*/
+                        
+    cout<<"___________________________________________________________________________________\n";                  
+    cout<<"|ROLL NO.|NAME OF STUDENT|MATHS|ENGLISH|HINDI|SOCIALS|SCIENCE|COMPUTER|TOTAL MARKS|\n";
+    cout<<"|--------|---------------|-----|-------|-----|-------|-------|--------|-----------|\n";
+    for(i=0;i<1;i++)
+    {
+        cout<<"|"<<i+1<<" \t|";
+        cout<<student[i].name<<"\t\t|";
+        cout<<student[i].math<<"\t|";
+        cout<<student[i].english<<"\t|";
+        cout<<student[i].hindi<<"\t|";
+        cout<<student[i].social<<"\t|";
+        cout<<student[i].science<<"\t|";
+        cout<<student[i].computer<<"\t|";
+        cout<<student[i].total<<"\t|\n\n";
+    }
+                        
+                        /*FREQUENCY TABLE OF MATHS MARKS*/
+    cout<<"_________________________________________\n";
+    cout<<"\tTOTAL CLASS FREQUENCY MARKS OF MATHS\n";
+    cout<<"------------------------------------------\n";
+    cout<<"\n|  RANGE  |NUMBER OF STUDENTS \n";
+    cout<<"|0  to 10 :"<<math_count0<<"\n";
+    cout<<"|11 to 20 :"<<math_count1<<"\n";
+    cout<<"|21 to 30 :"<<math_count2<<"\n";
+    cout<<"|31 to 40 :"<<math_count3<<"\n";
+    cout<<"|41 to 50 :"<<math_count4<<"\n";
+    cout<<"|51 to 60 :"<<math_count5<<"\n";
+    cout<<"|61 to 70 :"<<math_count6<<"\n";
+    cout<<"|71 to 80 :"<<math_count7<<"\n";
+    cout<<"|81 to 90 :"<<math_count8<<"\n";
+    cout<<"|91 to 100:"<<math_count9<<"\n\n";
+                     
+                     /*FREQUENCY TABLE OF ENGLISH MARKS*/
+    cout<<"___________________________________________\n";
+    cout<<"\tTOTAL CLASS FREQUENCY MARKS OF ENGLISH\n";
+    cout<<"--------------------------------------------\n";
+    cout<<"\n|  RANGE  |NUMBER OF STUDENTS\n";
+    cout<<"|0  to 10 :"<<eng_count0<<"\n";
+    cout<<"|11 to 20 :"<<eng_count1<<"\n";
+    cout<<"|21 to 30 :"<<eng_count2<<"\n";
+    cout<<"|31 to 40 :"<<eng_count3<<"\n";
+    cout<<"|41 to 50 :"<<eng_count4<<"\n";
+    cout<<"|51 to 60 :"<<eng_count5<<"\n";
+    cout<<"|61 to 70 :"<<eng_count6<<"\n";
+    cout<<"|71 to 80 :"<<eng_count7<<"\n";
+    cout<<"|81 to 90 :"<<eng_count8<<"\n";
+    cout<<"|91 to 100:"<<eng_count9<<"\n\n";
+    
+                     /*FREQUENCY TABLE OF HINDI MARKS*/
+    cout<<"__________________________________________\n";
+    cout<<"\tTOTAL CLASS FREQUENCY MARKS OF HINDI\n";
+    cout<<"------------------------------------------\n";
+    cout<<"\n|  RANGE  |NUMBER OF STUDENTS\n";
+    cout<<"|0  to 10 :"<<hindi_count0<<"\n";
+    cout<<"|11 to 20 :"<<hindi_count1<<"\n";
+    cout<<"|21 to 30 :"<<hindi_count2<<"\n";
+    cout<<"|31 to 40 :"<<hindi_count3<<"\n";
+    cout<<"|41 to 50 :"<<hindi_count4<<"\n";
+    cout<<"|51 to 60 :"<<hindi_count5<<"\n";
+    cout<<"|61 to 70 :"<<hindi_count6<<"\n";
+    cout<<"|71 to 80 :"<<hindi_count7<<"\n";
+    cout<<"|81 to 90 :"<<hindi_count8<<"\n";
+    cout<<"|91 to 100:"<<hindi_count9<<"\n\n";
+    
+                     /*FREQUENCY TABLE OF SOCIALS MARKS*/
+    cout<<"__________________________________________\n";
+    cout<<"\tTOTAL CLASS FREQUENCY MARKS OF SOCIaLS\n";
+    cout<<"-------------------------------------------\n";
+    cout<<"\n|  RANGE  |NUMBER OF STUDENTS\n";
+    cout<<"|0  to 10 :"<<sst_count0<<"\n";
+    cout<<"|11 to 20 :"<<sst_count1<<"\n";
+    cout<<"|21 to 30 :"<<sst_count2<<"\n";
+    cout<<"|31 to 40 :"<<sst_count3<<"\n";
+    cout<<"|41 to 50 :"<<sst_count4<<"\n";
+    cout<<"|51 to 60 :"<<sst_count5<<"\n";
+    cout<<"|61 to 70 :"<<sst_count6<<"\n";
+    cout<<"|71 to 80 :"<<sst_count7<<"\n";
+    cout<<"|81 to 90 :"<<sst_count8<<"\n";
+    cout<<"|91 to 100:"<<sst_count9<<"\n\n";
+    
+                     /*FREQUENCY TABLE OF SCIENCE MARKS*/
+    cout<<"___________________________________________\n";
+    cout<<"\tTOTAL CLASS FREQUENCY MARKS OF SCIENCE\n";
+    cout<<"----------------------------------------------\n";
+    cout<<"\n|  RANGE  |NUMBER OF STUDENTS\n";
+    cout<<"|0  to 10 :"<<sci_count0<<"\n";
+    cout<<"|11 to 20 :"<<sci_count1<<"\n";
+    cout<<"|21 to 30 :"<<sci_count2<<"\n";
+    cout<<"|31 to 40 :"<<sci_count3<<"\n";
+    cout<<"|41 to 50 :"<<sci_count4<<"\n";
+    cout<<"|51 to 60 :"<<sci_count5<<"\n";
+    cout<<"|61 to 70 :"<<sci_count6<<"\n";
+    cout<<"|71 to 80 :"<<sci_count7<<"\n";
+    cout<<"|81 to 90 :"<<sci_count8<<"\n";
+    cout<<"|91 to 100:"<<sci_count9<<"\n\n";
+    
+                     /*FREQUENCY TABLE OF COMPUTER MARKS*/
+    cout<<"_____________________________________________\n";
+    cout<<"\tTOTAL CLASS FREQUENCY MARKS OF COMPUTER\n";
+    cout<<"----------------------------------------------\n";
+    cout<<"\n|  RANGE  |NUMBER OF STUDENTS\n";
+    cout<<"|0  to 10 :"<<comp_count0<<"\n";
+    cout<<"|11 to 20 :"<<comp_count1<<"\n";
+    cout<<"|21 to 30 :"<<comp_count2<<"\n";
+    cout<<"|31 to 40 :"<<comp_count3<<"\n";
+    cout<<"|41 to 50 :"<<comp_count4<<"\n";
+    cout<<"|51 to 60 :"<<comp_count5<<"\n";
+    cout<<"|61 to 70 :"<<comp_count6<<"\n";
+    cout<<"|71 to 80 :"<<comp_count7<<"\n";
+    cout<<"|81 to 90 :"<<comp_count8<<"\n";
+    cout<<"|91 to 100:"<<comp_count9<<"\n\n";
+    
+    
+    return 0;
+    
+}
