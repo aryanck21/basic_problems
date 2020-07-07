@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,a,b,k,count=0;
+    cin>>a>>b>>k;
+    for(i=a;i<=b;i++)
+    {
+        if((i%k)==0)
+        count++;
+        else 
+        NULL;
+        
+    }
+    cout<<count;
+    return 0;
+}
