@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i,j,n,m,count=0;
+	
+	cout<<"Enter number of rows: ";
+	cin>>n;
+	cout<<"Enter number of columns:";
+	cin>>m;
+	
+	int arr[n][m];
+	
+	cout<<"Enter elements of sparse matrix respectively: ";
+	
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{	
+			cin>>arr[i][j];
+	
+				if(arr[i][j]!=0)
+				{	
+					count++;
+				}
+		}
+	}
+
+	cout<<"Total rows:"<<n<<"\tTotal columns:"<<m<<"\tTotal non-zero elements:"<<count<<endl;
+	
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			if(arr[i][j]!=0)
+			{		
+				cout<<"\t"<<i<<"\t\t"<<j<<"\t\t"<<arr[i][j]<<endl;
+			}
+		}
+	}
+
+	return 0;
+}
