@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+
+int findMaxSubarray(int arr[],int k){
+        int maxValue=INT_MIN;
+        int currentSum=0;
+
+        for(int i=0;i<10;i++){
+        currentSum+=arr[i];
+
+        if(i>=k-1){
+                maxValue=max(maxValue,currentSum);
+                currentSum-=arr[i-(k-1)];
+                }
+
+        }
+        return maxValue;
+}
+
+int main(){
+        int arr[10]={4,3,1,7,8,1,2,8,1,0};
+        int k=3;
+        cout<<findMaxSubarray(arr,k);
+        return 0;
+}
