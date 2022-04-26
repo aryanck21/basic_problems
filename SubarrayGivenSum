@@ -1,0 +1,27 @@
+#include<iostream>
+
+using namespace std;
+
+int smallestSubarray(int arr[],int targetSum){
+        int windowSize=100000;
+        int currentWindowSum=0;
+        int windowEnd=0;
+
+        for(int i=0;i<10;i++){
+                currentWindowSum+=arr[i];
+                while(currentWindowSum>=targetSum){
+                        windowSize=min(windowSize,i-windowEnd+1);
+                        currentWindowSum-=arr[windowEnd];
+                        windowEnd++;
+                }
+        }
+        return windowSize;
+}
+
+int main(){
+        int arr[10]={4,3,1,7,8,1,2,8,1,0};
+        int targetSum=0;
+
+        cout<<smallestSubarray(arr,targetSum);
+        return 0;
+}
